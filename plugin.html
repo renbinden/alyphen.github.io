@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Lucariatias - plugin</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>plugin</h1>
+        <h2>Request a plugin</h2>
+
+        <section id="navbar">
+          <a href="index.html" class="btn">Home</a>
+          <a href="projects.html" class="btn">Projects</a>
+          <a href="tools.html" class="btn">Tools</a>
+          <a href="contact.html" class="btn">Contact</a>
+          <a href="plugin.html" class="btn-selected">Request a plugin</a>
+          <a href="blog.html" class="btn">Blog</a>
+          <a href="https://www.youtube.com/Lucariatias" class="btn">YouTube</a>
+          <a href="https://github.com/Lucariatias" class="btn">GitHub</a> 
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <form action="mailto:lucariatias@gmail.com" method="post" enctype="text/plain">
+            <h2>Your details</h2>
+            E-mail: <input type="text"><br />
+            Name: <input type="text"><br />
+            Donation: <input type="checkbox" name="donation" value="yes"> (People willing to donate will get priority, but leaving this unchecked does not mean I won't do the plugin.)<br />
+            <br />
+            <h2>Plugin details</h2>
+            Category:
+            <select name="category">
+                <option value="admin">Admin</option>
+                <option value="antigrief">Anti-griefing</option>
+                <option value="chat">Chat</option>
+                <option value="dev">Developer tools</option>
+                <option value="economy">Economy</option>
+                <option value="fix">Fixes</option>
+                <option value="fun">Fun</option>
+                <option value="general">General</option>
+                <option value="information">Informational</option>
+                <option value="mechanics">Mechanics</option>
+                <option value="misc">Miscellaneous</option>
+                <option value="rp">Roleplaying</option>
+                <option value="teleport">Teleportation</option>
+                <option value="webadmin">Web administration</option>
+                <option value="worldedit">World editing/management</option>
+                <option value="worldgen">World generation</option>
+            </select><br />
+            Name: <input type="text" name="name"><br />
+            What I want: <br />
+            <textarea rows="16" cols="64" name="what"></textarea><br />
+            Commands: <br />
+            <textarea rows="16" cols="64" name="cmds"></textarea><br />
+            Permissions: <br />
+            <textarea rows="16" cols="64" name="perms"></textarea><br />
+            Configuration options: <br />
+            <textarea rows="16" cols="64" name="config"></textarea><br />
+            <br />
+            <h2>Release details</h2>
+            Where am I allowed to release it when finished?<br />
+            GitHub: <input type="checkbox" name="release" value="github"><br />
+            BukkitDev: <input type="checkbox" name="release" value="bukkitdev"><br />
+            Other: <input type="checkbox" name="release" value="other"><br /><br />
+            Licencing:
+            <select name="licence">
+                <option value="agplv3">AGPLv3</option>
+                <option value="gplv3">GPLv3</option>
+                <option value="gplv2">GPLv2</option>
+                <option value="lgplv3">LGPLv3</option>
+                <option value="lgplv2">LGPLv2</option>
+                <option value="wtfpl">WTFPL</option>
+                <option value="apache">Apache License</option>
+                <option value="mit">MIT License</option>
+            </select><br />
+            Deadline: <input type="text" name="deadline"> (Only enter one if it's desperate, otherwise just leave blank or enter "none").<br />
+            Expected maintenance and support period: <input type="text" name="maintenance"><br />
+            <input type="submit" value="Submit">
+        </form>
+      </section>
+    </div>
+    
+  </body>
+</html>
