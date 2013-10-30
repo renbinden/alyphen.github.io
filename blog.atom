@@ -6,7 +6,25 @@
     <subtitle>My personal blog.</subtitle>
     <link type="application/atom+xml" rel="self" href="http://lucariatias.github.io/blog.atom" />
     <link type="text/html" rel="alternate" href="http://lucariatias.github.io/" />
-    <updated>2013-10-30T21:50:00Z</updated>
+    <updated>2013-10-30T22:35:00Z</updated>
+        
+    <entry>
+        <id>tag:lucariatias.github.io,2013-10-30:/blog.html#5</id>
+        <title>Experimental Atom support</title>
+        <link href="http://lucariatias.github.io/blog.html#5" />
+        <link rel="alternate" type="text/html" href="http://lucariatias.github.io/blog.html#5" />
+        <updated>2013-10-30T22:35:00Z</updated>
+        <summary>I've added Atom support to my blog - subscribe <a href="blog.atom">here.</a></summary>
+        <author>
+            <name>Lucariatias</name>
+            <email>lucariatias@gmail.com</email>
+            <uri>http://lucariatias.github.io/</uri>
+        </author>
+        <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/f3b7d744a6792ca0de74b6c776be6c35?d=https%3A%2F%2Fidenticons.github.com%2F0381ea20121363db589e588a73764d03.png&amp;r=x&amp;s=30"/>
+        <content type="html">
+            &lt;pre style='white-space:pre-wrap;width:81ex'>Experimental Atom support&lt;/pre>
+        </content>
+    </entry>
 
     <entry>
         <id>tag:lucariatias.github.io,2013-10-30:/blog.html#4</id>
