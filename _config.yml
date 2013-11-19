@@ -1,0 +1,5 @@
+url: http://lucariatias.github.io
+markdown: redcarpet
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: "."
+pygments: true

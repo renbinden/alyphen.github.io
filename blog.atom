@@ -1,20 +1,24 @@
+---
+layout: nil
+---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-GB">
  
-    <id>tag:lucariatias.github.io,2013:/blog.html</id>
+    <id>http://lucariatias.github.io/blog</id>
     <title>Lucariatias - blog</title>
     <subtitle>My personal blog.</subtitle>
     <link type="application/atom+xml" rel="self" href="http://lucariatias.github.io/blog.atom" />
-    <link type="text/html" rel="alternate" href="http://lucariatias.github.io/" />
-    <updated>2013-10-30T22:35:00Z</updated>
-        
+    <link type="text/html" rel="alternate" href="http://lucariatias.github.io/blog/" />
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+      
+    {% for post in site.posts %}
     <entry>
-        <id>tag:lucariatias.github.io,2013-10-30:/blog.html#5</id>
-        <title>Experimental Atom support</title>
-        <link href="http://lucariatias.github.io/blog.html#5" />
-        <link rel="alternate" type="text/html" href="http://lucariatias.github.io/blog.html#5" />
-        <updated>2013-10-30T22:35:00Z</updated>
-        <summary>I've added Atom support to my blog.</summary>
+        <id>{{ site.url }}{{ post.id }}</id>
+        <title>{{ post.title }}</title>
+        <link href="{{ site.url }}{{post.id}}" />
+        <link rel="alternate" type="text/html" href="{{ site.url }}{{post.url}}" />
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <summary>{{ post.excerpt }}</summary>
         <author>
             <name>Lucariatias</name>
             <email>lucariatias@gmail.com</email>
@@ -22,80 +26,9 @@
         </author>
         <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/f3b7d744a6792ca0de74b6c776be6c35?d=https%3A%2F%2Fidenticons.github.com%2F0381ea20121363db589e588a73764d03.png&amp;r=x&amp;s=30"/>
         <content type="html">
-            &lt;pre style='white-space:pre-wrap;width:81ex'>Experimental Atom support&lt;/pre>
+            &lt;pre style='white-space:pre-wrap;width:81ex'>{{ post.title }}&lt;/pre>
         </content>
     </entry>
-
-    <entry>
-        <id>tag:lucariatias.github.io,2013-10-30:/blog.html#4</id>
-        <title>Donation page up!</title>
-        <link href="http://lucariatias.github.io/blog.html#4" />
-        <link rel="alternate" type="text/html" href="http://lucariatias.github.io/blog.html#4" />
-        <updated>2013-10-30T21:41:18Z</updated>
-        <summary>If I've helped you in some way, feel free to send me something. Any contributions appreciated.</summary>
-        <author>
-            <name>Lucariatias</name>
-            <email>lucariatias@gmail.com</email>
-            <uri>http://lucariatias.github.io/</uri>
-        </author>
-        <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/f3b7d744a6792ca0de74b6c776be6c35?d=https%3A%2F%2Fidenticons.github.com%2F0381ea20121363db589e588a73764d03.png&amp;r=x&amp;s=30"/>
-        <content type="html">
-            &lt;pre style='white-space:pre-wrap;width:81ex'>Donation page up!&lt;/pre>
-        </content>
-    </entry>
-    
-    <entry>
-        <id>tag:lucariatias.github.io,2013-10-30:/blog.html#3</id>
-        <title>Blog styles altered</title>
-        <link href="http://lucariatias.github.io/blog.html#3" />
-        <link rel="alternate" type="text/html" href="http://lucariatias.github.io/blog.html#3" />
-        <updated>2013-10-30T21:41:18Z</updated>
-        <summary>Blog posts now have a header! We have progress!</summary>
-        <author>
-            <name>Lucariatias</name>
-            <email>lucariatias@gmail.com</email>
-            <uri>http://lucariatias.github.io/</uri>
-        </author>
-        <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/f3b7d744a6792ca0de74b6c776be6c35?d=https%3A%2F%2Fidenticons.github.com%2F0381ea20121363db589e588a73764d03.png&amp;r=x&amp;s=30"/>
-        <content type="html">
-            &lt;pre style='white-space:pre-wrap;width:81ex'>Blog styles altered&lt;/pre>
-        </content>
-    </entry>
-        
-    <entry>
-        <id>tag:lucariatias.github.io,2013-10-30:/blog.html#2</id>
-        <title>Maven release plugin</title>
-        <link href="http://lucariatias.github.io/blog.html#2" />
-        <link rel="alternate" type="text/html" href="http://lucariatias.github.io/blog.html#2" />
-        <updated>2013-10-30T21:41:18Z</updated>
-        <summary>I'm integrating the maven release plugin into my workflow; this means that you'll see updates on GitHub's release tab, and stable releases are far easier to push.</summary>
-        <author>
-            <name>Lucariatias</name>
-            <email>lucariatias@gmail.com</email>
-            <uri>http://lucariatias.github.io/</uri>
-        </author>
-        <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/f3b7d744a6792ca0de74b6c776be6c35?d=https%3A%2F%2Fidenticons.github.com%2F0381ea20121363db589e588a73764d03.png&amp;r=x&amp;s=30"/>
-        <content type="html">
-            &lt;pre style='white-space:pre-wrap;width:81ex'>Maven release plugin&lt;/pre>
-        </content>
-    </entry>
-        
-    <entry>
-        <id>tag:lucariatias.github.io,2013-10-19:/blog.html#1</id>
-        <title>Welcome to my blog!</title>
-        <link href="http://lucariatias.github.io/blog.html#1" />
-        <link rel="alternate" type="text/html" href="http://lucariatias.github.io/blog.html#1" />
-        <updated>2013-10-19T16:57:56Z</updated>
-        <summary>I'll occasionally post things here from time to time, feel free to have a glance around.</summary>
-        <author>
-            <name>Lucariatias</name>
-            <email>lucariatias@gmail.com</email>
-            <uri>http://lucariatias.github.io/</uri>
-        </author>
-        <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/f3b7d744a6792ca0de74b6c776be6c35?d=https%3A%2F%2Fidenticons.github.com%2F0381ea20121363db589e588a73764d03.png&amp;r=x&amp;s=30"/>
-        <content type="html">
-            &lt;pre style='white-space:pre-wrap;width:81ex'>Welcome to my blog!&lt;/pre>
-        </content>
-    </entry>
+    {% endfor %}
  
 </feed>
