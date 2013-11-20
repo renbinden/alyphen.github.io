@@ -8,7 +8,7 @@ subheading: Posts sorted by tags
 {% endfor %}
 <br /><br />
 {% for tag in site.tags %}
-<a id="{{ tag[0] }}">
+<a id="{{ tag[0] }}"></a>
 {{ tag[0] }}
 {% for post in tag[1] %}
 <div class="blogpost">
@@ -17,6 +17,5 @@ subheading: Posts sorted by tags
     <p>{{ post.content }}</p>
 </div>
 {% endfor %}
-</a>
 <br />
 {% endfor %}
