@@ -1,0 +1,22 @@
+---
+layout: default
+title: blog/tags
+subheading: Posts sorted by tags
+---
+{% for tag in site.tags %}
+<a href="#{{ tag[0] }}">{{ tag[0] }}</a> 
+{% endfor %}
+<br /><br />
+{% for tag in site.tags %}
+<a id="{{ tag[0] }}">
+{{ tag[0] }}
+{% for post in tag[1] %}
+<div class="blogpost">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h4>{{ post.date | date_to_string }}</h4>
+    <p>{{ post.content }}</p>
+</div>
+{% endfor %}
+</a>
+<br />
+{% endfor %}
