@@ -1,8 +1,9 @@
 ---
 layout: default
 title: home
-subheading: Welcome!
 ---
-<p>Hi, I'm Ross, I'm a 17-year-old student living in the UK with a fascination for programming.<br /><br />
-I hope you find my stuff useful, and if there's anything you need to know, don't feel intimidated to ask.<br /><br />
-If you want to use any of my code, it's more than likely licensed under a free, copyleft licence, so as long as you follow the terms set out there, it's absolutely fine. Contributions are also welcome.</p>
+<ul class="posts">
+{% for post in site.posts %}
+<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

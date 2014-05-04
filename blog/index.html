@@ -1,11 +1,10 @@
 ---
 layout: default
 title: blog
-subheading: My personal blog
 ---
-<a href="/blog/tags">tags</a> | <a href="/blog.atom">feed</a><br /><br />
+<p><a href="/blog/tags">tags</a> | <a href="/blog.atom">feed</a></p>
 {% for post in site.posts %}
-<div class="blogpost">
+<div class="post container">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <h4>{{ post.date | date_to_string }}</h4>
     <p>{{ post.content }}</p>

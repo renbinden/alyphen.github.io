@@ -1,21 +1,21 @@
 ---
 layout: default
 title: blog/tags
-subheading: Posts sorted by tags
 ---
+<p>
 {% for tag in site.tags %}
-<a href="#{{ tag[0] }}">{{ tag[0] }}</a> 
+<a href="#{{ tag[0] }}">{{ tag[0] }}</a>
 {% endfor %}
-<br /><br />
+</p>
 {% for tag in site.tags %}
-<a id="{{ tag[0] }}"></a>
-{{ tag[0] }}
+</div>
+<div class="container">
+<p><a id="{{ tag[0] }}">{{ tag[0] }}</a></p>
 {% for post in tag[1] %}
-<div class="blogpost">
+<div class="post container">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <h4>{{ post.date | date_to_string }}</h4>
     <p>{{ post.content }}</p>
 </div>
 {% endfor %}
-<br />
 {% endfor %}

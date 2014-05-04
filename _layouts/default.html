@@ -1,42 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
     <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
-
     <title>Lucariatias - {{ page.title }}</title>
   </head>
-
   <body>
-
-    <header>
-      <div class="container">
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.subheading }}</h2>
-
-        <section id="navbar">
-          <a href="/" {% if page.title contains "home" %}class="btn-selected"{% else %}class="btn"{% endif %}>Home</a>
-          <a href="/projects" {% if page.title contains "projects" %}class="btn-selected"{% else %}class="btn"{% endif %}>Projects</a>
-          <a href="/tools" {% if page.title contains "tools" %}class="btn-selected"{% else %}class="btn"{% endif %}>Tools</a>
-          <a href="/contact" {% if page.title contains "contact" %}class="btn-selected"{% else %}class="btn"{% endif %}>Contact</a>
-          <a href="/plugin" {% if page.title contains "plugin" %}class="btn-selected"{% else %}class="btn"{% endif %}>Request a plugin</a>
-          <a href="/blog" {% if page.title contains "blog" %}class="btn-selected"{% else %}class="btn"{% endif %}>Blog</a>
-          <a href="/donate" {% if page.title contains "donate" %}class="btn-selected"{% else %}class="btn"{% endif %}>Donate</a>
-          <a href="https://www.youtube.com/Lucariatias" class="btn">YouTube</a>
-          <a href="https://github.com/Lucariatias" class="btn">GitHub</a> 
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
+    <div class="header container">
+      <h2>{{ page.title }}</h2>
     </div>
-    
+    <div class="container">
+      <ul class="navigation">
+        <li class="navigation"><a href="/">home</a></li>
+        <li class="navigation"><a href="/blog">blog</a></li>
+        <li class="navigation"><a href="/games">games</a></li>
+        <li class="navigation"><a href="/minecraft">minecraft</a></li>
+        <li class="navigation"><a href="/tools">tools</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      {{ content }}
+    </div>
+    <div class="footer container">
+      <p><a href="/contact">contact</a></p>
+    </div>
   </body>
 </html>
