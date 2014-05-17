@@ -32,7 +32,7 @@ Of course, there's nothing stopping me from including these things in Harmonic M
 
 **An abstract music/puzzle game**
 
-This is something I've had in my head for a while. As music progresses, you press various combinations of keys and tiles flap out in different directions. Levels progress in difficulty,
+This is something I've had in my head for a while. As music progresses, you press various combinations of keys and tiles flap out in different directions. Levels progress in difficulty, from triangles, to squares, to pentagons, to hexagons. A diificult concept to explain, and I think I won't fully understand how I want it to work till I've tried it.
 
 **Finish off Harmonic Moon**
 
