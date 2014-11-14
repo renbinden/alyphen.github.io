@@ -3,14 +3,14 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-GB">
- 
+
     <id>http://lucariatias.github.io/blog</id>
-    <title>Lucariatias - blog</title>
+    <title>alyphen - blog</title>
     <subtitle>My personal blog.</subtitle>
-    <link type="application/atom+xml" rel="self" href="http://lucariatias.github.io/blog.atom" />
-    <link type="text/html" rel="alternate" href="http://lucariatias.github.io/blog/" />
+    <link type="application/atom+xml" rel="self" href="http://alyphen.github.io/blog.atom" />
+    <link type="text/html" rel="alternate" href="http://alyphen.github.io/blog/" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-      
+
     {% for post in site.posts %}
     <entry>
         <id>{{ site.url }}{{ post.id }}</id>
@@ -20,15 +20,15 @@ layout: nil
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <summary type="html">{{ post.content | xml_escape }}</summary>
         <author>
-            <name>Lucariatias</name>
-            <email>lucariatias@gmail.com</email>
-            <uri>http://lucariatias.github.io/</uri>
+            <name>alyphen</name>
+            <email>alyphen@gmail.com</email>
+            <uri>http://alyphen.github.io/</uri>
         </author>
-        <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/f3b7d744a6792ca0de74b6c776be6c35?d=https%3A%2F%2Fidenticons.github.com%2F0381ea20121363db589e588a73764d03.png&amp;r=x&amp;s=30"/>
+        <media:thumbnail height="30" width="30" url="http://0.gravatar.com/avatar/be980a30a6e4818ba16e648902642b20.png?s=30"/>
         <content type="html">
             &lt;pre style='white-space:pre-wrap;width:81ex'>{{ post.title }}&lt;/pre>
         </content>
     </entry>
     {% endfor %}
- 
+
 </feed>

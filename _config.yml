@@ -1,4 +1,4 @@
-url: http://lucariatias.github.io
+url: http://alyphen.github.io
 markdown: redcarpet
 permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: "."

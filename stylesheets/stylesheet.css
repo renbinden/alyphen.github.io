@@ -1,47 +1,47 @@
 body {
-	background-color: #FFFFFF;
+	background-color: #262626;
 }
 
 p {
   font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
-  color: #000000;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #000000;
+	color: #ffffff;
 	font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
 }
 
 a:link {
-  color: #303030;
+  color: #c3c3c3;
   text-decoration: none;
   transition-property: color;
   transition-duration: 0.2s;
 }
 
 a:visited {
-  color: #303030;
+  color: #c3c3c3;
   text-decoration: none;
   transition-property: color;
   transition-duration: 0.2s;
 }
 
 a:hover {
-  color: #ff0000;
+  color: #8559ff;
   text-decoration: none;
   transition-property: color;
   transition-duration: 0.2s;
 }
 
 a:active {
-  color: #7D0F0F;
+  color: #572dff;
   transition-property: color;
   transition-duration: 0.2s;
 }
 
 .container {
 	border-style: solid;
-	border-color: #000000;
+	border-color: #ffffff;
 	border-width: 1px 0px;
   padding: 16px;
   margin-left: auto;
@@ -67,7 +67,7 @@ a:active {
 	border-width: 2px;
 	border-radius: 4px;
 	margin: 16px;
-	width: auto;
+	width: 100%;
 }
 
 ul.navigation {
@@ -85,6 +85,6 @@ li.navigation {
 
 ul.posts {
   list-style-type: none;
-  color: #000000;
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
 }
