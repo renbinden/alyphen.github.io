@@ -13,28 +13,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:link {
-  color: #c3c3c3;
+  color: #9099d6;
   text-decoration: none;
   transition-property: color;
   transition-duration: 0.2s;
 }
 
 a:visited {
-  color: #c3c3c3;
+  color: #9099d6;
   text-decoration: none;
   transition-property: color;
   transition-duration: 0.2s;
 }
 
 a:hover {
-  color: #8559ff;
+  color: #5f36ff;
   text-decoration: none;
   transition-property: color;
   transition-duration: 0.2s;
 }
 
 a:active {
-  color: #572dff;
+  color: #3e0fbc;
   transition-property: color;
   transition-duration: 0.2s;
 }
