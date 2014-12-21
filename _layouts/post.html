@@ -4,7 +4,7 @@ layout: default
 <div class="post">
     <h2>{{ page.title }}</h2>
     <h4>{{ page.date | date_to_string }}</h4>
-    <p>{{ content }}</p>
+    {{ content }}
     <h4>Tags: {{ page.tags | array_to_sentence_string }}</h4>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
