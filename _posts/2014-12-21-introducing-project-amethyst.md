@@ -15,6 +15,7 @@ Anyway, Project Amethyst (working title) is my attempt at making a standalone pl
 Servers get pretty much full customisation over what goes on in the world, how it looks, how players interact with each other, etc.
 
 So far, I've done:
+
 * A login system (which needs a little redoing)
 * Sending object types from the server to clients (with some object scripting in Python, Ruby or JavaScript, your choice.)
 * Sending tiles from the server to clients
