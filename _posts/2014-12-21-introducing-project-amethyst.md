@@ -27,4 +27,4 @@ Once I have something I'm relatively happy with, I'll release some initial build
 
 Here's a quick gif of the client in action so far (this won't be the default art for too long, just waiting on artists, so we'll have to make do with placeholders for now.):
 
-![amethyst preview]({{ site.url}}/assets/2014-12-21-amethyst-preview-03.png)
+![amethyst preview]({{ site.url}}/assets/2014-12-21-amethyst-preview-03.gif)
